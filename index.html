@@ -26,8 +26,10 @@
 
   <div class="container">
     <script>
-      var answer = 10 + 3;
-      document.write('10+3の結果は' + answer + 'です');
+      var today = new Date();//インスタンス化している　Dateはオブジェクト
+      var todayHtml = today.getFullYear() + '/' + (today.getMonth() +1) + '/' + today.getDate();
+
+      document.write('<p class="date">' + todayHtml + '</p>');
     </script>
   </div>
 
